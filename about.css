@@ -1,0 +1,219 @@
+:root{
+    --section-title: #434079;
+    --title: #2d2643;
+    --span: #713fc2;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+.full-block-1{
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 50px;
+    height: 250px;
+    text-align: center;
+    background-color: var(--section-title);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.back-btn a{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*TEXT*/
+
+h2{
+    font-size: 24px;
+    color: white;
+    font-family:  "Playfair Display";
+    margin: 0 0 10px 0;
+    font-weight: 1000;
+}
+
+h3{
+    font-size: 22px;
+    font-family: "Playfair Display";
+    color: var(--section-title);
+    text-decoration: none;
+}
+
+h5{
+    font-size: 20px;
+    font-family: "Playfair Display";
+    color: white;
+    text-decoration: none;
+    margin: 0 0 10px 0;
+    text-align: center;
+    padding: 0 2px;
+}
+
+h4{
+    font-size: 20px;
+    font-family:  "Playfair Display";
+    color: var(--section-title);
+    margin: 0;
+    margin: 0 0 10px 0;
+}
+
+h10{
+    font-size: 18px;
+    font-family:  "Source Sans Pro";
+    line-height: 1.2;
+}
+
+.title{
+    font-size: 48px;
+    font-style: normal; 
+    font-weight: 900;
+    color: black;
+    font-family: "Playfair Display";
+}
+
+.subtitle{
+    color: black;
+    font-size: 24px;
+    font-family:  "Playfair Display";
+    font-weight: bolder;
+    text-align: center;
+}
+
+p{
+    margin: 50px 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family:  "Source Sans Pro";
+    line-height: 1.2;
+}
+
+span a{
+    font-size: 18px;
+    font-family:  "Source Sans Pro";
+    line-height: 1.2;
+}
+
+
+.cute-little-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.grid{
+    margin: 50px 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.art-gallery{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 160px));
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px 10px 0px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*SOCIALS*/
+.socials{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.socials i{
+    transition: ease 1s;
+    color: #4C219D;
+}
+
+.socials i:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+@media only screen and (max-width: 1300px){
+    p, .grid{
+        margin: 50px 20%;
+        display: flex;
+        justify-content: center;
+    }    
+}
+
+@media only screen and (max-width: 1000px){
+    p,.grid{
+        margin: 50px 15%;
+        display: flex;
+        justify-content: center;
+    }    
+}
+
+@media only screen and (max-width: 800px){
+    .full-block-1{
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 50px;
+        height: 300px;
+        text-align: center;
+        background-color: var(--section-title);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+
+    .cute-little-profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    p, .grid{
+        margin: 50px 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}
+
