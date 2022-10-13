@@ -68,6 +68,11 @@ h5{
     
 }
 
+p{
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+}
+
 .btns{
     display: flex;
     flex-direction: row;
